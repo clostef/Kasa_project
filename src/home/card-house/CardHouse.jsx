@@ -1,12 +1,18 @@
 import { useState } from "react";
 import "./CardHouse.css";
+import { Link } from "react-router-dom";
 
-function CardHouse() {
+function CardHouse({ house }) {
   return (
     <>
-      <div className="card">
-        <p className="title-card">Titre de la location</p>
-      </div>
+      <Link to={`/fiche/${house.id}`}>
+        <div
+          className="card"
+          style={{ backgroundImage: `url(${house.cover})` }}
+        >
+          <p className="title-card">{house.title}</p>
+        </div>
+      </Link>
     </>
   );
 }

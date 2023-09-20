@@ -1,23 +1,53 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import homeImg from "../assets/Photo-falaise.jpg";
 import "./Home.css";
 import CardHouse from "./card-house/CardHouse";
 
 function Home() {
-  const cards = [1, 2, 3, 4, 5, 6];
+  const [data, setData] = useState([]);
+
+  const displayCards = () => {
+    if (data.length === 0) {
+      return "";
+    }
+
+    return data.map((card) => {
+      return <CardHouse key={card.id} house={card} />;
+    });
+  };
+
+  const fetchJson = () => {
+    fetch("./data.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        setData(() => data);
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  };
+
+  useEffect(() => {
+    fetchJson();
+  }, []);
 
   return (
     <>
       <div className="home">
         <div className="pict-home">
           <img className="photo-home" src={homeImg} />
-          <p className="txt-photo">Chez vous, partout et ailleurs</p>
+          <div className="txt-photo">
+            <p>Chez vous, partout et ailleurs</p>
+          </div>
         </div>
-        <div className="cards-house">
-          {cards.map((card) => {
-            return <CardHouse />;
-          })}
-        </div>
+        <div className="cards-house">{displayCards()}</div>
       </div>
     </>
   );

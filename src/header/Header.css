@@ -1,6 +1,7 @@
 .header-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 50px;
 }
 
@@ -11,11 +12,31 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
-  line-height: 142.6%; /* 34.224px */
+  line-height: 142.6%;
+  text-decoration: none;
+}
+
+.header-nav-link:hover {
+  color: #ff6060;
   text-decoration-line: underline;
+  cursor: pointer;
 }
 
 .link-nav {
   display: flex;
   gap: 60px;
+}
+
+@media (max-width: 400px) {
+  .header-nav-link {
+    font-size: 12px;
+  }
+
+  .logo-nav {
+    width: 145px;
+  }
+  .link-nav {
+    display: flex;
+    gap: 35px;
+  }
 }

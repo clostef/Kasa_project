@@ -1,6 +1,12 @@
 .pict-home {
   height: 200px;
   mix-blend-mode: darken;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
 }
 
 .photo-home {
@@ -13,12 +19,15 @@
 
 .txt-photo {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%);
   color: white;
-  font-size: 48px;
+  font-size: 44px;
   padding: 10px;
+}
+
+@media (max-width: 840px) {
+  .txt-photo {
+    font-size: 24px;
+  }
 }
 
 .cards-house {

@@ -1,0 +1,24 @@
+.main-pic {
+  height: 200px;
+  mix-blend-mode: darken;
+}
+
+.pic-back {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  filter: brightness(70%);
+}
+
+.list-collapse-a {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.item-col-a {
+  max-width: 1023px;
+}
