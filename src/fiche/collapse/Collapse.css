@@ -38,7 +38,7 @@
 }
 
 .content-coll.active {
-  max-height: 200px;
+  max-height: 180px;
 }
 
 .collapse-btn {
@@ -54,7 +54,7 @@
   transform: rotate(-180deg);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 415px) {
   .coll {
     height: 30px;
   }

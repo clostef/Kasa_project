@@ -27,7 +27,7 @@
   gap: 60px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 415px) {
   .header-nav-link {
     font-size: 12px;
   }

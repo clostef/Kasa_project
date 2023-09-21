@@ -62,7 +62,7 @@
   color: #fff;
   text-align: center;
   font-family: Montserrat;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   background-color: #ff6060;
@@ -96,7 +96,7 @@
   max-width: 582px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 415px) {
   .infos-user {
     flex-direction: column;
   }

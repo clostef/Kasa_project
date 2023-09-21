@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Fiche.css";
 import Collapse from "./collapse/collapse";
-import background from "../assets/Background.jpg";
-import host from "../assets/Host.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate, useParams } from "react-router-dom";

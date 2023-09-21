@@ -39,7 +39,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 415px) {
   .nb-error {
     font-size: 123px;
   }
