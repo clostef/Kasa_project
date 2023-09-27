@@ -42,7 +42,7 @@
   font-weight: 500;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 768px) {
   .banner {
     height: 255px;
   }
@@ -53,5 +53,6 @@
 
   .dots {
     bottom: 0px;
+    display: none;
   }
 }

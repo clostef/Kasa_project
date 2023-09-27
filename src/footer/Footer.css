@@ -15,7 +15,7 @@
   font-size: 24px;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 414px) {
   .footer-p {
     font-size: 12px;
     width: 133px;
